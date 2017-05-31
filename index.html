@@ -24,19 +24,17 @@ false);
 function onDeviceReady() {
 //Get a handle to the results area of the page
 //we'll need it later
+navigator.notification.alert("onDeviceReady");
 res = document.getElementById("captureResults");
 }
 function doCapture() {
 //Clear out any previous results
 res.innerHTML = "Initiating capture...";
 //Get some values from the page
-var numItems =
-document.getElementById("numItems").value;
-var capDur =
-document.getElementById("duration").value;
+var numItems = document.getElementById("numItems").value;
+var capDur = document.getElementById("duration").value;
 //Figure out which option is selected
-var captureType =
-document.getElementById("captureType").selectedIndex;
+var captureType = document.getElementById("captureType").selectedIndex;
 switch(captureType) {
 case 0:
 //Capture Audio
