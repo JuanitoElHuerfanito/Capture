@@ -1,19 +1,21 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Capture</name>
-  <description>
-      Aplicación que Captura 2.0
-  </description>
-  <author email="dev@cordova.apache.org" href="http://cordova.io">
-      Apache Cordova Team
-  </author>
-	
-  <access origin="*" />
-  <feature name="Camera">
+<widget id="com.example.capture" version="0.0.1">
+        <name>Capture</name>
+        <description>
+            A sample Apache Cordova application that responds to the deviceready event.
+        </description>
+        <author email="dev@callback.apache.org" href="http://phonegap.com">
+            Apache Cordova Team
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+		<feature name="Camera">
 		<param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
 		</feature>
 		<feature name="Notification">
 		<param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+		</feature>
+		<feature name="Vibration">
+		<param name="android-package" value="org.apache.cordova.vibration.Vibration" />
 		</feature>
 		<feature name="File">
 		<param name="android-package" value="org.apache.cordova.file.FileUtils" />
@@ -24,20 +26,7 @@
 
 		<plugin name = "org.apache.cordova.camera"/>
 		<plugin name = "org.apache.cordova.dialogs"/>
+		<plugin name = "org.apache.cordova.vibration"/>
 		<plugin name = "org.apache.cordova.file"/>
 		<plugin name = "org.apache.cordova.media-capture"/>
-		
-  <allow-intent href="http://*/*" />
-  <allow-intent href="https://*/*" />
-  <allow-intent href="tel:*" />
-  <allow-intent href="sms:*" />
-  <allow-intent href="mailto:*" />
-  <allow-intent href="geo:*" />
-  <platform name="android">
-      <allow-intent href="market:*" />
-  </platform>
-  <platform name="ios">
-      <allow-intent href="itms:*" />
-      <allow-intent href="itms-apps:*" />
-  </platform>
-</widget>
+    </widget>
