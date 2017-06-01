@@ -1,5 +1,5 @@
 <widget id="com.example.capture" version="0.0.1">
-        <name>Capture</name>
+        <name>ApkCaptura</name>
         <description>
             A sample Apache Cordova application that responds to the deviceready event.
         </description>
