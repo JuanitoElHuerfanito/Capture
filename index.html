@@ -50,7 +50,7 @@
 	  if(len > 0) {
 	  htmlStr = "<p>Results:</p><ol>";
 	  for( i = 0, len; i < len; i += 1) {
-	  //alert(fileList[i].fullPath);
+	  navigator.notification.alert(fileList[i].fullPath);
 	  htmlStr += '<li><a href="file:/' + fileList[i].fullPath + '">' + fileList[i].name + '</a></li>';
 	  }
 	  htmlStr += "</ol>";
